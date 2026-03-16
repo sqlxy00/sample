@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+}
+
+.ranking-badge-1 {
+  background: linear-gradient(45deg, #f59e0b, #fbbf24);
+}
+
+.ranking-badge-2 {
+  background: linear-gradient(45deg, #94a3b8, #cbd5e1);
+}
+
+.ranking-badge-3 {
+  background: linear-gradient(45deg, #b45309, #d97706);
+}
+
+/* カスタム比較表のスクロール */
+.comparison-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sticky-col {
+  position: sticky;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  border-right: 1px solid #e2e8f0;
+}
+
+.cta-button {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* アニメーション */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
